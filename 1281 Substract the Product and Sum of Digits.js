@@ -6,7 +6,7 @@ var subtractProductAndSum = function(n) {
     
   let digitArray = n.toString().split('');
   let product = digitArray.reduce((acc,val) => acc * val);
-  let sum = digitArray.reduce((acc,val) => parseInt(acc) + parseInt(val));
+  let sum = digitArray.reduce((acc,val) => parseInt(acc) + parseInt(val)); //parseInt was needed as + was actualy joining the digits together not adding them
   console.log(digitArray);
   console.log(product);
   console.log(sum);
